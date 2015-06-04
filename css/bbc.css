@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helmet, Freesans, sans-serif;
+    font-size: 62.5%;
+    background: #fff;
+    color: white;
+}
+
+#header, #container {
+    font-size: 1.3em;
+}
+
+#masthead, #content, #footer {
+    width: 978px;
+    margin: 0 auto;
+}
+
+#header {
+    min-width: 994px;
+    position: relative;
+    z-index: 99;
+    height: 40px;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+#header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#header a * {
+    text-decoration: none;
+    border: none;
+}
+
+
+#masthead-background {
+    background: #000;
+    opacity: 0.4;
+    filter: alpha(opacity = 20);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#masthead {
+    position: relative;
+    z-index: 2;
+    overflow: auto;
+}
+
+
+/**
+ * @group BBC Logo
+ */
+
+#bbc-logo {
+    float: left;
+    border-width: 0 1px 0 0;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+#bbc-logo a {
+    display: block; 
+    background: url("../images/bbc-sprite.png") no-repeat 0 -180px transparent;
+    margin: 8px 8px 7px 0;
+}
+
+#bbc-logo img {
+    opacity: 0;
+    filter: alpha(opacity = 0);
+}
+
+
+/**
+ * @group Search
+ */
+
+#search {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    height: 23px;
+    background: #fff;
+}
+
+#search form {
+    line-height: 1;
+}
+
+#search input {
+    color: #333;
+    border: none;
+    margin: 3px 29px 0 8px;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+#search label {
+    display: none;
+}
+
+#search button {
+   background: none;
+   border: none;
+   position: absolute;
+   right: 6px;
+   bottom: 2px;
+}
+
+
+/**
+ * @group Navigation
+ */
+
+#navigation {
+    
+}
+
+#navigation ul {
+    float: right;
+    margin-right: 220px;
+    border-right: 1px solid #336381;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+#navigation ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    border-color: #336381;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+#navigation a {
+    display: block;
+    color: #fff;
+    padding: 6px 16px 9px 15px;
+    line-height: 24px;
+    font-weight: bold;
+    border-bottom-color: #fff;
+    border-style: solid;
+    border-width: 0;
+    position: relative;
+    bottom: -1px;
+}
+
+#navigation a:hover {
+    border-bottom-width: 4px;
+    padding-bottom: 5px;
+}
+
+#nav-news a {
+    border-bottom-color: #9b2313;
+}
+
+#nav-sport a {
+    border-bottom-color: #ffe711;
+}
+
+#nav-weather a {
+    border-bottom-color: #77cdff;
+}
+
+#nav-iplayer a {
+    border-bottom-color: #ed3482;
+}
+
+/**
+ * @group Content
+ */
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+    
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#content {
+    padding-bottom: 40px;
+}
+
+#container {
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+#background {
+    margin-top: -42px;
+    padding-top: 40px;
+    background: #333333;
+    background-size: 100%;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#content-inner {
+    font-size: 1.3em;
+    line-height: 1.4;
+    padding: 20px 1.5em 20px 21px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    background: #222222;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.4em;
+    margin: 1.4em 0 1.4em 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+h2, h3 {
+    font-size: 2.2em;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    margin: .5em 0 1em 0;
+}
+
+a {
+    color: #30737b;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.8;
+}
+
+dl dt,
+dl dd {
+    padding: 8px 0;
+}
+
+dl dt {
+    float: left;
+    font-weight: bold;
+    width: 220px;
+}
+
+dl dd {
+    border-bottom: 1px solid #333333;
+}
+
+#map {
+    float: left;
+    width: 450px;
+    height: 450px;
+    background: #fff;
+}
+#map-canvas { 
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+#image {
+    margin-top: 20px;
+}
+#image img {
+    width: 450px;
+    height: 100px;
+}
+#character-image img {
+    max-width: 450px;
+    max-height: 450px;
+}
+
+#character-description {
+    margin-left: 470px;
+}
+
+#my-intro {
+    margin-bottom: 20px;
+}
+
+blockquote {
+    width: 450px;
+    float: right;
+    background: url("../images/quote.png") no-repeat 0 19px;
+}
+
+blockquote p {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-left: 60px;
+}
+
+blockquote cite {
+    font-size: 0.6em;
+    display: block;
+    padding-top: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+/**
+ * @group Footer
+ */
+
+#footer {
+    border-top: none;
+    padding: 16px 0;
+    font-size: 1.2em;
+    line-height: 1.4;
+    background: #fff;
+}
+
+#footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#footer-links {
+    width: 500px;
+    float: right;
+}
+
+#footer-links ul {
+    list-style: none;
+    float: right;
+    clear: both;
+}
+
+#footer-links ul li {
+    display: block;
+}
+
+#footer-links ul li ul li {
+    display: inline-block;
+    width: 150px;
+    padding-right: 8px;
+}
+
+#footer-logo {
+    margin-bottom: 23px;
+}
+
+#disclaimer {
+    width: 307px;
+    color: #999;
+}
+
+#copyright {
+    font-weight: bold;
+}

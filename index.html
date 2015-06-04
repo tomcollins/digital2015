@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Add your page title</title>
+    <meta name="Description" content="My Weather - Weather information about Cardiff"/>
+
+    <link rel="stylesheet" type="text/css" href="css/bbc.css"  />
+    <link rel="stylesheet" type="text/css" href="css/custom.css"  />
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkW750bmbQq6z7X8X4YIBsGNXZvFwx8PU"></script>
+
+</head>
+
+<body>
+
+<div id="header">
+
+    <div id="masthead-background"></div>
+
+    <div id="masthead">
+
+        <div id="bbc-logo">
+            <a href="http://www.bbc.co.uk/">
+                <abbr title="British Broadcasting Corporation" class="blq-home">
+                    <img src="images/bbc.png" alt="BBC" width="84" height="24" />
+                </abbr>
+            </a>
+        </div>
+
+        <div id="navigation">
+            <h2 class="hidden">bbc.co.uk navigation</h2>
+            <ul>
+                <li id="nav-news"><a href="http://www.bbc.co.uk/news/">News</a></li>
+                <li id="nav-sport"><a href="http://www.bbc.co.uk/sport/">Sport</a></li>
+                <li id="nav-weather"><a href="http://www.bbc.co.uk/weather/">Weather</a></li>
+                <li id="nav-iplayer"><a href="http://www.bbc.co.uk/iplayer/">iPlayer</a></li>
+                <li id="nav-tv"><a href="http://www.bbc.co.uk/tv/">TV</a></li>
+                <li id="nav-radio"><a href="http://www.bbc.co.uk/radio/">Radio</a></li>
+                <li id="nav-more"><a href="http://www.bbc.co.uk/a-z/">More&hellip;</a></li>
+            </ul>
+
+            <div id="search">
+                <form method="get" action="http://search.bbc.co.uk/search" accept-charset="utf-8">
+                    <label for="search-query">Search term:</label>
+                    <input id="search-query" type="text" name="q" value="Search" maxlength="128" />
+                    <button id="search-button" type="submit">
+                        <span>
+                            <img src="images/search.png" width="13" height="13" alt="Search"/>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="container">
+    <div id="background">
+
+        <div id="content">
+            
+            <!-- Begin Page Content -->
+            <h1>Add your page heading</h1>
+
+            <div id="content-inner">
+
+                <div id="map">
+                    <div id="map-canvas"></div>
+                </div>
+
+                <div id="character-description">
+
+                    <h2>Your location name</h2>
+
+                    <div id="my-intro">
+                        <p>
+                            A small paragraph describing the forecast.
+                        </p>
+                    </div>
+
+                    <dl>
+                        <dt>10:00</dt>
+                        <dd>Sunny</dd>
+
+                        <dt>11:00</dt>
+                        <dd>Sunny</dd>
+
+                        <dt>12:00</dt>
+                        <dd>Rain</dd>
+                    </dl>
+
+                    <div id="images">
+                        <div id="image">
+                            <img src="images/blank.png" alt="Your name" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- End Page Content -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div id="footer-links">
+        <h2 class="hidden">BBC links</h2>
+        <ul>
+            <li>
+                <ul>
+                    <li><a href="http://www.bbc.co.uk/home/mobile">Mobile site</a></li>
+                    <li><a href="http://www.bbc.co.uk/terms/">Terms of Use</a></li>
+                    <li><a href="http://www.bbc.co.uk/aboutthebbc/">About the BBC</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="http://www.bbc.co.uk/privacy/">Privacy</a></li>
+                    <li><a href="http://www.bbc.co.uk/help/">BBC Help</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="http://www.bbc.co.uk/privacy/bbc-cookies-policy.shtml">Cookies</a></li>
+                    <li><a href="http://www.bbc.co.uk/accessibility/">Accessibility Help</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="http://www.bbc.co.uk/guidance/">Parental Guidance</a></li>
+                    <li><a href="http://news.bbc.co.uk/newswatch/ukfs/hi/feedback/default.stm">Contact Us</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="footer-logo">
+        <img src="images/bbc.png" width="84" height="24" alt="BBC" />
+    </div>
+
+    <p id="disclaimer">
+        <span id="copyright">BBC &copy; 2012</span>
+        <a href="http://www.bbc.co.uk/help/web/links/">The BBC is not responsible for the content of external sites. Read more.</a>
+    </p>
+</div>
+
+<script type="text/javascript" src="js/map.js"></script>
+
+</body>
+</html>
