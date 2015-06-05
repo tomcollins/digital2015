@@ -252,20 +252,7 @@ p {
     line-height: 1.8;
 }
 
-dl dt,
-dl dd {
-    padding: 8px 0;
-}
 
-dl dt {
-    float: left;
-    font-weight: bold;
-    width: 220px;
-}
-
-dl dd {
-    border-bottom: 1px solid #333333;
-}
 
 #map {
     float: left;
@@ -376,3 +363,47 @@ blockquote cite {
 #copyright {
     font-weight: bold;
 }
+
+
+
+table.forecast {
+    width: 100%;
+    border-spacing: 0;
+    background: #fff;
+    color: #000;
+}
+table.forecast tr {
+    border-bottom: 1px solid #333;
+}
+table.forecast th,
+table.forecast td {
+    text-align: left;
+    border-bottom: 1px solid #333;
+    padding: 7px 0 7px 10px;
+}
+table.forecast tr:last-child td {
+    border-bottom: 0px solid #fff;
+}
+table.forecast .time {
+    width: 120px;
+    border-right: 1px solid #333;
+}
+table.forecast td.sun,
+table.forecast td.cloud,
+table.forecast td.rain,
+table.forecast td.lightning {
+    padding-left: 40px;
+    background: url("../images/icons/1.png") no-repeat 2px 5px;
+}
+table.forecast td.cloud {
+    background-image: url("../images/icons/7.png");
+}
+table.forecast td.rain {
+    background-image: url("../images/icons/15.png");
+}
+table.forecast td.lightning {
+    background-image: url("../images/icons/30.png");
+}
+
+
+

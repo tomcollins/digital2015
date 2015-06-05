@@ -1,11 +1,11 @@
 #container {
-  background: url("../images/backgrounds/clouds-bg-strip.jpg") repeat-y 0 0; 
+  /*background: url("../images/backgrounds/clouds-bg-strip.jpg") repeat-y 0 0;*/
 }
 #background {
-  background: url("../images/backgrounds/clouds-bg.jpg") repeat-x 0 0; 
+  /*background: url("../images/backgrounds/clouds-bg.jpg") repeat-x 0 0;*/ 
 }
 
 #content-inner {
-    background: #226083;
+    /*background: #226083;*/
 }
 
